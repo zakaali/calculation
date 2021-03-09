@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <center>
+    <h1>calculate two field </h1>
+   
+    num 1: <input type="text" id="num1">
+    <br>
+    <br>
+    num 2: <input type="text" id="num2">
+    <br>
+    <br>
+    dollar $ <input type="text" id="dol">
+    <br>
+    <br>
+    <button onclick="calculate()">calculate</button>
+</center>
+<script>
+    function calculate(value)
+    {
+        
+
+        var field1=document.getElementById("num1").value;
+        var field2=document.getElementById("num2").value;
+        var dol;
+        dol= result *value;
+        document.getElementById("dol").value=dol
+        var result=parseFloat(field1)*parseFloat(field2);
+
+        if(!isNaN(result))
+        {
+            document.getElementById("answer").innerHTML="the answer is "+result;
+        }
+    
+    }
+    
+</script>
+<center><h1 id="answer"></h1></center>
+<center><h2 id="error"></h2></center>
+
+</body>
+</html>
